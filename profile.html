@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/header.css" />
+    <link rel="stylesheet" href="/CSS/profile.css" />
+    <title>Profile | eLEARN</title>
+  </head>
+  <body>
+    <h1 id="top">
+      Welcome
+      <script>
+        document.write(localStorage.getItem("Name"));
+      </script>
+    </h1>
+
+    <h1>What you want to Learn ?</h1>
+    <div class="trendCourses">
+      <div
+        class="courseCard"
+        style="background-image: url('/Images/html600x350.jpeg')"
+      ></div>
+      <div
+        class="courseCard"
+        style="
+          background-image: url('/Images/css600x350.png');
+          background-size: contain;
+        "
+      ></div>
+      <div
+        class="courseCard"
+        style="background-image: url('/Images/js600x350.jpg')"
+      ></div>
+      <div
+        class="courseCard"
+        style="
+          background-image: url('/Images/bootstrap600x350.png');
+          background-size: contain;
+        "
+      ></div>
+    </div>
+
+    <h2>Your details.....</h2>
+    <div>
+      <table>
+        <tr>
+          <td>Your name</td>
+          <td>
+            <script>
+              document.write(localStorage.getItem("Name"));
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>Your password</td>
+          <td>
+            <script>
+              document.write(localStorage.getItem("Password"));
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>Your course</td>
+          <td>
+            <script>
+              document.write(localStorage.getItem("Course"));
+            </script>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="/Javascript/profile.js"></script>
+  </body>
+</html>

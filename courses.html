@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/header.css" />
+    <link rel="stylesheet" href="/CSS/courses.css" />
+    <title>eLEARN | Home</title>
+  </head>
+  <body>
+    <header id="header" class="sticky">
+      <input type="checkbox" name="" id="check" />
+      <label for="check" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+      <img src="/Images/logo.png" alt="logo" id="logo" />
+      <nav class="nav-bar">
+        <ul id="menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/courses.html">Courses</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/signup.html" id="signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="top" class="shrink">
+        <h1>Enhance Your Skills</h1>
+      </section>
+      <article>
+        <hr />
+        <h1>Courses Categories</h1>
+        <hr />
+
+        <img src="/Images/html.png" alt="Image" class="courseImg" />
+        <br />
+        <hr />
+
+        <img src="/Images/css.jpg" alt="Image" class="courseImg" />
+        <br />
+        <hr />
+
+        <img src="/Images/javascript.jpg" alt="Image" class="courseImg" />
+        <br />
+        <hr />
+        <img src="/Images/bootstrap.png" alt="Image" class="courseImg" />
+      </article>
+    </main>
+    <footer>
+      <i class="fa-regular fa-copyright copy" style="color: #ffffff"></i>
+      <span>All rights reserved.</span>
+
+      <i class="fa-brands fa-linkedin icons" style="color: #ffffff"></i>
+      <i class="fa-brands fa-instagram icons" style="color: #ffffff"></i>
+      <i class="fa-brands fa-meta icons" style="color: #ffffff"></i>
+      <i class="fa-brands fa-twitter icons" style="color: #ffffff"></i>
+      <span id="media">Join us on Social media</span>
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        let header = document.getElementById("header");
+        if (this.window.scrollY >= 230) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      });
+      var a = document.getElementsByClassName("courseImg");
+      a[0].addEventListener("click", function () {
+        window.location.href = "/signup.html";
+      });
+      a[1].addEventListener("click", function () {
+        window.location.href = "/signup.html";
+      });
+      a[2].addEventListener("click", function () {
+        window.location.href = "/signup.html";
+      });
+      a[3].addEventListener("click", function () {
+        window.location.href = "/signup.html";
+      });
+    </script>
+  </body>
+</html>

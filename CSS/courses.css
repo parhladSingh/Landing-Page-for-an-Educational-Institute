@@ -1,0 +1,37 @@
+#top{
+    width: 100%;
+    height: 50vh;
+    background-color: red;
+    background-image: url('/Images/coursestop.jpg');
+}
+#top h1{
+    font-size: 50px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 285px;
+    padding-top: 135px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+article h1{
+    font-size: 60px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+article{
+    text-align: center;
+}
+.courseImg{
+    width: 50%;
+    margin: 20px;
+    padding: 2px;
+    border: 4px solid black;
+}
+.courseImg:hover{
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    cursor: pointer;
+    border-color: rgb(255, 0, 234);
+    border-radius: 15px;
+}

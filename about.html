@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="/CSS/header.css" />
+    <link rel="stylesheet" href="/CSS/about.css" />
+    <title>eLEARN | About Us</title>
+  </head>
+  <body>
+    <header id="header" class="sticky">
+      <input type="checkbox" name="" id="check" />
+      <label for="check" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+      <img src="/Images/logo.png" alt="logo" id="logo" />
+      <nav class="nav-bar">
+        <ul id="menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/courses.html">Courses</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/signup.html" id="signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+        <div id="left"></div>
+        <div id="right">
+            <h1>Welcome to eLEARN</h1>
+            <h2>We provide most popular Youtube videos in our courses related to HTML , CSS , JavaScript.</h2>
+            <h4>eLEARN is the best online learning platform where you will get multiple benfits </br> like live classes and international certifiactions etc. <br> We provide Industrial Trainings with colloboration with top tech companies like Microsoft , Google , Meta etc. We also have an Training Cum Internship Program <br>at affordable price in which provide awesome opportunities to students.</h4>
+            
+            <h3>In our batches , you will get :-</h3>
+            
+            <table>
+                <tr>
+                    <td><i class="fa-sharp fa-solid fa-arrow-right" style="color: #000000;"></i></i></td>
+                    <td>&nbsp;Online Classes</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><i class="fa-sharp fa-solid fa-arrow-right" style="color: #000000;"></i></i></td>
+                    <td>&nbsp;5 Capstone Projects</td>
+                  </tr>
+                <tr>
+                  <td><i class="fa-sharp fa-solid fa-arrow-right" style="color: #000000;"></i></i></td>
+                  <td>&nbsp;Skilled Instructors</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><i class="fa-sharp fa-solid fa-arrow-right" style="color: #000000;"></i></i></td>
+                  <td>&nbsp;Internship Certificate</td>
+                  
+                </tr>
+                <tr>
+                  <td><i class="fa-sharp fa-solid fa-arrow-right" style="color: #000000;"></i></i></td>
+                  <td>&nbsp;1 Year Course Access</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><i class="fa-sharp fa-solid fa-arrow-right" style="color: #000000;"></i></i></td>
+                  <td>&nbsp;Live Mentorship by Experts</td>
+                </tr>
+                <tr>
+                  <td><i class="fa-sharp fa-solid fa-arrow-right" style="color: #000000;"></i></i></td>
+                  <td>&nbsp;International Certificate</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><i class="fa-sharp fa-solid fa-arrow-right" style="color: #000000;"></i></i></td>
+                  <td>&nbsp;Course Completion Certificate</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="feedback">
+      <h1>Give Your Feedback</h1>
+      <form action="">
+        <h6>
+          <input type="text" placeholder="Enter your name" />
+          <input type="email" placeholder="Enter your email" required />
+        </h6>
+        <textarea cols="111" rows="10" placeholder="Write in details, what type of improvements you want from us in our website or in our courses........"></textarea>
+        <p id="A"><input type="submit" value="Send Message" /></p>
+      </form>
+    </div>
+
+    <footer>
+      <i class="fa-regular fa-copyright copy" style="color: #ffffff;"></i>
+      <span>All rights reserved.</span>
+      
+      <i class="fa-brands fa-linkedin icons" style="color: #ffffff;"></i>
+      <i class="fa-brands fa-instagram icons" style="color: #ffffff;"></i>
+      <i class="fa-brands fa-meta icons" style="color: #ffffff;"></i>
+      <i class="fa-brands fa-twitter icons" style="color: #ffffff;"></i>
+      <span id="media">Join us on Social media</span>
+    </footer>
+
+    <script>
+      window.addEventListener('scroll',function(){
+         let header = document.getElementById('header');
+         if(this.window.scrollY >= 230){
+            header.classList.add('sticky');
+         }
+         else{
+            header.classList.remove('sticky');
+         }
+      });
+    </script>
+  </body>
+</html>
